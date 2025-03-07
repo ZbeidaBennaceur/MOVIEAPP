@@ -1,0 +1,16 @@
+.Carte {
+    margin:2%;
+    max-height:50rem;
+    padding:1%;
+}
+
+.titre {
+   height: 50px; 
+}
+
+.description {
+    height: 180px !important;
+}
+.image {
+    height:400px;
+}
