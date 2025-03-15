@@ -14,7 +14,7 @@ const ListFilm = ({films, rechercheTitre, rechercheRate}) => {
   && film.rate>= rechercheRate)
    
 
-   .map((film) => (<CardFilm movie={film} key={film.id} />))}
+   .map((film) => (<CardFilm movie={film} key={film.id}/>))}
     </div>
   )
 }

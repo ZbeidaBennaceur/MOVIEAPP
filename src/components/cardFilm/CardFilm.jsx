@@ -2,6 +2,7 @@ import React from 'react'
 import {Card, Button} from 'react-bootstrap';
 import './cardFilm.css'
 import Rating from '../filtrerRate/FiltrerRate';
+import {Link} from 'react-router-dom';
 
         
 const CardFilm = ({movie}) => {
@@ -19,8 +20,12 @@ const CardFilm = ({movie}) => {
         <Card.Text className='description'>
           {movie.description}
         </Card.Text>
-        
-        <Button variant="primary">Learn more</Button>
+        <Link to={`/description/${movie.id}`}>
+        <Button variant="primary" style={{margin:'1%'}}>Description</Button>
+        </Link>
+        <Link to={`/trailer/${movie.id}`}>
+        <Button variant="primary" style={{margin:'1%'}}>Trailer</Button>
+        </Link>
       </Card.Body>
     </Card>
     </div>
